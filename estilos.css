@@ -1,0 +1,263 @@
+:root {
+    --color-fondo: #f8f9fa; /* Color de fondo claro */
+    --color-primario: #007bff; /* Color primario */
+    --color-secundario: #0056b3; /* Color secundario */
+    --color-dorado: #ffd700; /* Color dorado */
+    --color-exito: #28a745; /* Color verde */
+    --color-advertencia: #ffc107; /* Color de advertencia */
+    --color-error: #dc3545; /* Color de error */
+    --color-blanco: #ffffff; /* Color blanco */
+    --color-negro: #343a40; /* Color negro */
+    --fuente-principal: Arial, sans-serif; /* Fuente moderna */
+}
+
+/* Estilos generales para el cuerpo */
+body {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, var(--color-primario), var(--color-secundario));
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--color-blanco);
+    transition: color 0.4s;
+}
+
+.navbar-brand:hover {
+    color: var(--color-dorado);
+}
+
+.navbar .btn {
+    background-color: var(--color-advertencia);
+    border: none;
+    border-radius: 25px; /* Bordes más redondeados */
+    padding: 10px 25px; /* Espaciado interno ajustado */
+    font-weight: bold;
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.navbar .btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+/* Botón de nuevo producto */
+.btn-nuevo-producto {
+    background-color: var(--color-exito);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    color: var(--color-blanco);
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.btn-nuevo-producto:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 30px; /* Margen superior ajustado */
+}
+
+/* Estilo para el contenedor del Login */
+.login-container {
+    background-color: var(--color-blanco);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+}
+
+/* Estilo de la tarjeta */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-header h3 {
+    margin: 0;
+}
+
+/* Estilos de etiquetas y campos de formulario */
+.form-group label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 25px; /* Bordes más redondeados */
+}
+
+/* Efecto al enfocar en campos de entrada */
+input:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón de inicio de sesión */
+.btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    border-radius: 25px;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secundario);
+    border-color: #004085;
+}
+
+/* Botones en modales */
+.modal-footer .btn {
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: var(--color-blanco);
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.modal-footer .btn:hover {
+    background-color: var(--color-secundario);
+    transform: scale(1.05);
+}
+
+/* Mensajes de error */
+.alert {
+    margin-top: 15px;
+    border-radius: 25px;
+    transition: opacity 0.4s;
+}
+
+/* Modales */
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+/* Tabla */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #dee2e6; /* Borde alrededor de la tabla */
+    width: 100%; /* Ancho completo */
+    margin-top: 20px; /* Espacio superior */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Encabezados de la tabla */
+.table th {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 12px; /* Espaciado interno en los encabezados */
+    text-align: left; /* Alineación a la izquierda */
+    font-weight: bold; /* Negrita en el texto */
+    border-bottom: 2px solid #dee2e6; /* Borde inferior para encabezados */
+}
+
+/* Filas de la tabla */
+.table tbody tr {
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para hover */
+}
+
+/* Filas de la tabla con fondo alternado */
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Color de fondo claro para filas impares */
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Color de fondo blanco para filas pares */
+}
+
+/* Efecto hover en filas de la tabla */
+.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Color de fondo al pasar el ratón */
+    transform: scale(1.02); /* Leve efecto de aumento */
+}
+
+/* Celdas de la tabla */
+.table td {
+    padding: 12px; /* Espaciado interno en las celdas */
+    border-top: 1px solid #dee2e6; /* Borde superior en las celdas */
+    color: #343a40; /* Color del texto */
+}
+
+/* Estilo para la tabla en pantallas pequeñas */
+@media (max-width: 576px) {
+    .table {
+        font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    padding: 15px 0; /* Espaciado interno ajustado */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Botón de cierre personalizado */
+.btn-danger.custom-close {
+    background-color: var(--color-error); /* Color rojo de fondo */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-weight: bold; /* Negrita en el texto */
+    color: var(--color-blanco); /* Color blanco para el texto */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.btn-danger.custom-close:hover {
+    background-color: #c82333; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+/* Estilos para títulos */
+h3 {
+    font-weight: bold;
+    color: var(--color-negro); /* Color oscuro */
+    padding-bottom: 10px; /* Espacio debajo del título */
+    margin-bottom: 20px; /* Espacio adicional debajo del título */
+}
+
+/* Estilo para el contenedor del filtro por precio */
+.mb-3 {
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    background-color: var(--color-fondo); /* Color de fondo claro */
+}
+
+/* Estilo para el botón de búsqueda */
+#filterButton {
+    margin-left: 10px; /* Espacio a la izquierda */
+}
+
+#filterButton:hover {
+    background-color: var(--color-primario); /* Color de fondo al pasar el ratón */
+    color: var(--color-blanco); /* Color de texto al pasar el ratón */
+}
